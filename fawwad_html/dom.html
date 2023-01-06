@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <form action="">
+        <label for="NAME">NAME</label>
+        <input type="text" id="inp">
+        <br>
+        <br>
+        <label for="physics">physics</label>
+        <input type="text" id="inp">
+        <br>
+        <br>
+        <label for="chemistry">chemistry</label>
+        <input type="text" id="inp">
+        <br>
+        <br>
+        <label for="computer">computer</label>
+        <input type="text" id="inp">
+        <br>
+        <br>
+        <button type="button" onclick="fun()">submit</button>
+    </form>
+    <p id="para"></p>
+    <script>
+        function fun(){
+
+
+            var user_name = document.getElementByid("inp").value;
+            var physics = document.getElementByid("phy").value;
+            var chemistry = document.getElementByid("chem").value;
+            var computer = document.getElementByid("comp").value;
+
+            document.getElementById("para").innerHTML = user_name ;
+            document.getElementById("para").innerHTML = "physics : " + physics ;
+            document.getElementById("para").innerHTML = "chemistry : " + chemistry ;
+            document.getElementById("para").innerHTML = "computer : " + computer ;
+        }
+    </script>
+</body>
+</html>

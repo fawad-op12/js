@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <form action="">
+        <!-- <label for="">Name</label>
+        <input type="text" id="inp"> -->
+    <br> 
+        <label for="">Physics</label>
+        <input type="text" id="p">
+
+
+    <br>
+
+
+        <label for="">COMPUTER</label>
+        <input type="text" id="c">
+
+
+
+    <br>
+
+
+        <label for="">Islamiat</label>
+        <input type="text" id="i">
+
+
+    <br>
+
+
+        <label for="">URDU</label>
+
+
+        <input type="text" id="u">
+    <br>
+
+
+        <label for="">maths</label>
+        <input type="text" id="m">
+    <br>
+
+
+        <button type="button" onclick="fun()">Submit</button>
+    </form>
+
+    <p id="para"></p>
+    <p id="para2"></p>
+    <p id="para3"></p>
+    <p id="para4"></p>
+    <p id="para5"></p>
+    <p id="para6"></p>
+    <p id="y"></p>
+
+
+    <script>
+        function fun(){
+            // var inp = (document.getElementById("inp").value);
+            var physics = parseInt(document.getElementById("p").value);
+            var COMPUTER =  parseInt(document.getElementById("c").value);
+            var islamiat =  parseInt(document.getElementById("i").value);
+            var URDU =  parseInt(document.getElementById("u").value);
+            var maths =  parseInt(document.getElementById("m").value);
+            var obt = physics + COMPUTER + islamiat + URDU + maths;
+
+
+            // document.getElementById("para").innerHTML = user_name
+            document.getElementById("para2").innerHTML ="physics :" + physics;
+            document.getElementById("para3").innerHTML ="COMPUTER :" + COMPUTER;
+            document.getElementById("para4").innerHTML ="islamiat :" + islamiat;
+            document.getElementById("para5").innerHTML ="URDU :" + URDU;
+            document.getElementById("para6").innerHTML ="maths :" + maths;
+            document.getElementById("y").innerHTML ="total :" + obt;
+            
+           
+        
+        }
+
+
+
+    </script>
+ 
+</body>
+</html>
+</body>
+</html>

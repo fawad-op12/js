@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM 2</title>
+</head>
+<body>
+    <form action="">
+        <label for="">age</label>
+        <input type="text" id="a"><br><br>
+        <label for="">nationality</label>
+        <input type="text" name="" id="n"><br><br>
+        <label for="text">religion</label>
+        <input type="text" id="r">
+        <button type="button" onclick="fun()">submit</button>
+    </form>
+    <div id="para"></div>
+    <script>
+        function fun(){
+            let age= document.getElementById("a").value
+            let nationality= document.getElementById("n").value
+            let religion= document.getElementById("r").value
+            if(age == 25 && religion==islam && nationality == "pakistani"){
+                document.getElementById("para").innerHTML = "eligible";
+            }
+            else{
+                document.getElementById("para").innerHTML = "not eligible";
+            }
+        }
+        
+    </script>
+</body>
+</html>
